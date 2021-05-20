@@ -136,11 +136,11 @@ public class CheckServiceImpl implements CheckService {
         Map<String, Integer> purchaseParameters = new HashMap<>();
         for (Product item : products) {
             if (Objects.nonNull(request.getParameter(item.getName())) &&
-                    !request.getParameter(item.getName()).isBlank()) {
+                    !request.getParameter(item.getName()).isEmpty()) {
                 purchaseParameters.put(item.getName(), Integer.parseInt(request.getParameter(item.getName())));
             }
         }
-        if (request.getParameter(CARD) != null && !request.getParameter(CARD).isBlank()) {
+        if (request.getParameter(CARD) != null && !request.getParameter(CARD).isEmpty()) {
             purchaseParameters.put(CARD, Integer.parseInt(request.getParameter(CARD)));
         } else {
             purchaseParameters.put(CARD, ZERO_INT);
