@@ -32,5 +32,4 @@ spring:
       jdbc:
         lob:
           non_contextual_creation: true
-server:
-  port:8082
+
