@@ -44,12 +44,12 @@ public class LogAspect {
         if (o != null) {
             result = gson.toJson(o);
         }
-        switch (level) {
-            case ERROR -> log.error("{} args={} result={}", methodName, args, result);
-            case WARN -> log.warn("{} args={} result={}", methodName, args, result);
-            case DEBUG -> log.debug("{} args={} result={}", methodName, args, result);
-            case INFO -> log.info("{} args={} result={}", methodName, args, result);
-            case TRACE -> log.trace("{} args={} result={}", methodName, args, result);
-        }
+//        switch (level) {
+//            case ERROR -> log.error("{} args={} result={}", methodName, args, result);
+//            case WARN -> log.warn("{} args={} result={}", methodName, args, result);
+//            case DEBUG -> log.debug("{} args={} result={}", methodName, args, result);
+//            case INFO -> log.info("{} args={} result={}", methodName, args, result);
+//            case TRACE -> log.trace("{} args={} result={}", methodName, args, result);
+//        }
     }
 }
