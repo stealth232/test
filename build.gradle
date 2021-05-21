@@ -6,7 +6,7 @@ plugins {
 }
 
 group = 'ru.clevertec'
-sourceCompatibility = '14'
+sourceCompatibility = '15'
 
 configurations {
 	compileOnly {
